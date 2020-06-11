@@ -1,8 +1,0 @@
-val add : (x : Int) : (Int) => Int => {
-  return (y : Int) => {
-    return x + y;
-  }
-}
-
-val result = add(3)(4);
-assert result == 7;

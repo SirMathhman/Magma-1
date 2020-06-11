@@ -1,4 +1,0 @@
-val value : Int = 10;
-val pointer : Pointer<Int> = -> value;
-val result : Int = <- pointer;
-assert result == value;

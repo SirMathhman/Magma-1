@@ -1,7 +1,0 @@
-val Point = (x : Int, y : Int) : Point => {
-  return this;
-}
-
-val aPoint = Point(3, 4);
-assert aPoint.x == 3;
-assert aPoint.y == 4;

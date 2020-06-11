@@ -1,8 +1,0 @@
-val x = 10;
-
-val myClosure = () : Int => {
-  return x;
-};
-
-val result = myClosure();
-assert result == 10;
