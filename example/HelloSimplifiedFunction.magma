@@ -1,0 +1,15 @@
+var add : (Int, Int) => Int = (x : Int, y : Int) : Int => {
+  return x + y;
+}
+
+add = (x : Int, y : Int) : Int => {
+  return x + y;
+}
+
+add = (x : Int, y : Int) => {
+  return x + y;
+}
+
+add = (x : Int, y : Int) => return x + y;
+
+add = (x : Int, y : Int) => x + y;
