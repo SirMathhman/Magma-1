@@ -1,0 +1,3 @@
+implicit val convertImplicitly = (value : Float) : String => String.valueOfFloat(value);
+
+print(5);
