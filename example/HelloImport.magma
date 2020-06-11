@@ -1,0 +1,4 @@
+val math = import "DoubleMath";
+
+val result = math.sqrt(4.0d);
+assert result == 2.0d;
