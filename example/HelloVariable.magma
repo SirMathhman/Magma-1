@@ -1,0 +1,4 @@
+val immutable = "aValue";
+var mutable = "anotherValue";
+
+mutable = "reassignedValue";
