@@ -1,0 +1,6 @@
+val state : Bool = True;
+val char : Char = 'x';
+val int : Int = 10;
+val float : Float : 10.0f;
+val double : Double : 10.0d;
+val string : String = "test";
