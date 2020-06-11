@@ -1,0 +1,1 @@
+native const printf = (format : String, value : Any) => Void;

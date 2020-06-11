@@ -1,0 +1,5 @@
+struct Console {
+  log : (String) => Void;
+}
+
+native const console : Console;

@@ -1,0 +1,8 @@
+import stdio;
+import Internal;
+
+out const Internal = <Internal>{
+  printString : (value : String) => {
+    printf("%s", value);
+  }
+}
