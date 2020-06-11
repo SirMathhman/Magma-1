@@ -3,3 +3,12 @@ val myFunction : () => Void = () : Void => {
 }
 
 myFunction();
+
+
+
+val returns = () => Int => {
+  return 10;
+}
+
+val result = returns();
+assert(result == 10);
