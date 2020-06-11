@@ -1,0 +1,9 @@
+var myFunction = () : Void => {
+  print("Hello World!");
+}
+
+myFunction = () : Void => {
+  print("Another value!");
+}
+
+myFunction();
