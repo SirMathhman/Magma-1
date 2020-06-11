@@ -1,4 +1,4 @@
-val immutable = "aValue";
-var mutable = "anotherValue";
+val immutable : String = "aValue";
+var mutable : String = "anotherValue";
 
 mutable = "reassignedValue";
