@@ -1,0 +1,4 @@
+val Point : Point = <Point>[x : Int, y : Int];
+val myPoint = Point(3, 4);
+assert myPoint.x == 3;
+assert myPoint.y == 4;
