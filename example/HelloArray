@@ -1,0 +1,4 @@
+val array : Array<Int> = Array(3, 4, 5);
+assert array[0] == 3;
+assert array[1] == 4;
+assert array[2] == 5;
