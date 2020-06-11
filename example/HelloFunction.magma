@@ -1,0 +1,5 @@
+val myFunction : () => Void = () : Void => {
+  print("Hello World!");
+}
+
+myFunction();
