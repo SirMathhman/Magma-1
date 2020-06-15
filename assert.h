@@ -11,6 +11,10 @@ void assertTrue(bool value);
 
 void assertFalse(bool value);
 
+void assertString(string expected, string actual);
+
+void assertNotSame(any* expected, any* actual);
+
 void execute(string name, void (*action)());
 
 #endif //MAGMA_1_ASSERT_H
