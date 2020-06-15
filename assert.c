@@ -10,6 +10,7 @@ string test_current = "";
 void pass() {
     printf("%s", "PASS: ");
     printf("%s", test_current);
+    printf("%s", "\n");
 }
 
 void fail(string message) {
@@ -17,6 +18,7 @@ void fail(string message) {
     printf("%s", test_current);
     printf("%s", " -> ");
     printf("%s", message);
+    printf("%s", "\n");
 }
 
 void assertTrue(bool value) {
@@ -30,5 +32,13 @@ void assertTrue(bool value) {
 void execute(string name, void (*action)()) {
     test_current = name;
     action();
+}
+
+void assertFalse(bool value) {
+    if (!value) {
+        pass();
+    } else {
+        fail("Value was true.");
+    }
 }
 

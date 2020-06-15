@@ -8,7 +8,12 @@ void testAssertTrue() {
     assertTrue(true);
 }
 
+void testAssertFalse() {
+    assertFalse(false);
+}
+
 int main() {
     execute("Assert True", testAssertTrue);
+    execute("Assert False", testAssertFalse);
     return 0;
 }

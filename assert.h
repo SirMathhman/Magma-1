@@ -9,6 +9,8 @@
 
 void assertTrue(bool value);
 
+void assertFalse(bool value);
+
 void execute(string name, void (*action)());
 
 #endif //MAGMA_1_ASSERT_H
