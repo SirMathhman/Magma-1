@@ -5,4 +5,8 @@
 #ifndef MAGMA_1_LANG_H
 #define MAGMA_1_LANG_H
 
+typedef char *string;
+typedef int bool;
+typedef void any;
+
 #endif //MAGMA_1_LANG_H
