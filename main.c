@@ -1,4 +1,6 @@
-//
-// Created by SirMathhman on 6/14/2020.
-//
+#include "stdio.h"
 
+int main() {
+    printf("%s", "Hello World!");
+    return 0;
+}
