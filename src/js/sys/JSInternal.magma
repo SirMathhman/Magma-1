@@ -1,7 +1,0 @@
-import Console;
-
-out const Internal = <Internal>{
-  printString : (value : String) => {
-    console.log(value);
-  }
-}
