@@ -7,14 +7,8 @@
 
 #include "lang.h"
 
-typedef struct Test {
-    string name;
+void assertTrue(bool value);
 
-    void (*run)();
-
-    void (*execute)(any*);
-} Test;
-
-Test Test_(string name, void(*run)());
+void execute(string name, void (*action)());
 
 #endif //MAGMA_1_ASSERT_H

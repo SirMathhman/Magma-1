@@ -9,4 +9,7 @@ typedef char *string;
 typedef int bool;
 typedef void any;
 
+#define false 0
+#define true 1
+
 #endif //MAGMA_1_LANG_H
