@@ -1,6 +1,4 @@
-#include "stdio.h"
+//
+// Created by SirMathhman on 6/15/2020.
+//
 
-int main() {
-    printf("%s", "Hello World!");
-    return 0;
-}
