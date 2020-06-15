@@ -3,3 +3,8 @@
 //
 
 #include "assert.h"
+
+Test Test_(string name, void (*run)()) {
+    Test result = {name, run};
+    return result;
+}

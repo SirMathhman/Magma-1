@@ -13,6 +13,6 @@ typedef struct Test {
     void (*run)();
 } Test;
 
-Test Test_(string name, void(*run)());
+Test Test_(const const const string name, void(*run)());
 
 #endif //MAGMA_1_ASSERT_H
