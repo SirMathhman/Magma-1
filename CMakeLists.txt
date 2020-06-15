@@ -3,5 +3,4 @@ project(Magma_1 C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Magma_1
-        help/main.c)
+add_executable(Magma_1 main.c)
