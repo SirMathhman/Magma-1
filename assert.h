@@ -11,6 +11,8 @@ typedef struct Test {
     string name;
 
     void (*run)();
+
+    void (*execute)(any*);
 } Test;
 
 Test Test_(string name, void(*run)());
