@@ -17,7 +17,7 @@ Void test(char *name, Void (*action)()) {
         } else {
             fprintf(stderr, "An exception in testing occurred.\n\t");
         }
-        fprintf(stderr, "%s", e->message->value);
+        fprintf(stderr, "%s\n", e->message->value);
     }
 }
 
