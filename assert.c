@@ -5,20 +5,42 @@
 #include "assert.h"
 #include "stdio.h"
 
-String __testName__;
+String *__testName__;
 
-Void test(String name, Void (*action)()) {
-    __testName__ = name;
+Void test(char *name, Void (*action)()) {
+    __testName__ = String_(name);
     action();
+    Exception *e = catch();
+    if (e != null) {
+        if (__testName__ != null) {
+            fprintf(stderr, "An exception in test %s was thrown.\n\t", __testName__->value);
+        } else {
+            fprintf(stderr, "An exception in testing occurred.\n\t");
+        }
+        fprintf(stderr, "%s", e->message->value);
+    }
+}
+
+Bool hasValidTestName() {
+    if (__testName__ == NULL) {
+        fprintf(stderr, "No test name was set.\n");
+        return false;
+    } else {
+        return true;
+    }
 }
 
 Void fail(char *message) {
-    fprintf(stderr, "FAIL: %s\n", __testName__);
-    fprintf(stderr, "\t%s\n", message);
+    if (hasValidTestName()) {
+        fprintf(stderr, "FAIL: %s\n", __testName__->value);
+        fprintf(stderr, "\t%s\n", message);
+    }
 }
 
 Void pass() {
-    fprintf(stdout, "PASS: %s\n", __testName__);
+    if (hasValidTestName()) {
+        fprintf(stdout, "PASS: %s\n", __testName__->value);
+    }
 }
 
 Void assertTrue(Bool value) {

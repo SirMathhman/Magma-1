@@ -12,7 +12,6 @@
 #define true 1
 
 typedef void Any;
-typedef char *String;
 typedef int Bool;
 
 typedef void Void;
@@ -21,10 +20,31 @@ typedef int Int;
 typedef float Float;
 typedef double Double;
 
-Void throw(Any *value);
+typedef struct String {
+    Int length;
+    Char *value;
+
+    Bool (*set)(Any *ref, Int index, Char value);
+
+    Char (*get)(Any *ref, Int index);
+
+    Void (*delete)(Any *ref);
+} String;
+
+String *String_(Char *value);
+
+typedef struct Exception {
+    String *message;
+
+    Void (*delete)(Any *);
+} Exception;
+
+Exception *Exception_(String *message);
+
+Void throw(Exception *value);
 
 Bool thrown();
 
-Any *catch();
+Exception *catch();
 
 #endif //MAGMA_SYSTEM_H

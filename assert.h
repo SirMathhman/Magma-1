@@ -7,7 +7,7 @@
 
 #include "system.h"
 
-Void test(String name, Void (*action)());
+Void test(char *name, Void (*action)());
 
 Void assertTrue(Bool value);
 
