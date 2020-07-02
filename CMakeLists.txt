@@ -1,4 +1,4 @@
 project(Magma)
 
-add_executable(Main main.c main.c system.c system.h)
-add_executable(Test test.c test.c assert.c assert.h system.c system.h)
+add_executable(Magma main.c main.c run.c run.h)
+add_executable(Magma_test test.c run.c run.h)
